@@ -1,4 +1,4 @@
-package com.example.cboj_sulfehorateb
+package com.example.nomixe
 
 import io.flutter.embedding.android.FlutterActivity
 

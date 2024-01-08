@@ -1,4 +1,4 @@
-import 'package:cboj_sulfehorateb/config/scroll_behaviour.dart';
+import 'package:nomixe/config/scroll_behaviour.dart';
 import 'package:flutter/material.dart';
 
 class AppBuilder extends StatelessWidget {

@@ -1,8 +1,8 @@
 import 'dart:io';
 
-import 'package:cboj_sulfehorateb/config/app_theme.dart';
-import 'package:cboj_sulfehorateb/utils/base_helper.dart';
-import 'package:cboj_sulfehorateb/utils/extensions/context.extension.dart';
+import 'package:nomixe/config/app_theme.dart';
+import 'package:nomixe/utils/base_helper.dart';
+import 'package:nomixe/utils/extensions/context.extension.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -52,8 +52,12 @@ class InviteTile extends StatelessWidget {
                         text: link!,
                       ),
                     );
-                    if(Platform.isIOS){
-                      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Copied to clipboard', style: context.bodyMedium?.copyWith(color: AppTheme.whiteColor),)));
+                    if (Platform.isIOS) {
+                      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                          content: Text(
+                        'Copied to clipboard',
+                        style: context.bodyMedium?.copyWith(color: AppTheme.whiteColor),
+                      )));
                     }
                   },
                   child: const CircleAvatar(

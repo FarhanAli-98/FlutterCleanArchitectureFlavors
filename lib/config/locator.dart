@@ -1,12 +1,12 @@
-import 'package:cboj_sulfehorateb/config/router/app_router.dart';
-import 'package:cboj_sulfehorateb/data/repositories/authentication.service.repository.dart';
-import 'package:cboj_sulfehorateb/domain/repositories/authentication.repository.dart';
+import 'package:nomixe/config/router/app_router.dart';
+import 'package:nomixe/data/repositories/authentication.service.repository.dart';
+import 'package:nomixe/domain/repositories/authentication.repository.dart';
 import 'package:get_it/get_it.dart';
 
-class GetLocator{
+class GetLocator {
   static GetIt getIt = GetIt.instance;
 
-  static void setupLocator(){
+  static void setupLocator() {
     getIt.registerLazySingleton<AuthenticationRepository>(() => AuthenticationServiceRepository());
     // getIt.registerLazySingleton<RouteGenerator>(() => RouteGenerator());
   }

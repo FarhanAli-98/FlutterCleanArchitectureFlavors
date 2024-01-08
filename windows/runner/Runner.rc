@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "cboj_sulfehorateb" "\0"
+            VALUE "FileDescription", "nomixe" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "cboj_sulfehorateb" "\0"
+            VALUE "InternalName", "nomixe" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2023 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "cboj_sulfehorateb.exe" "\0"
-            VALUE "ProductName", "cboj_sulfehorateb" "\0"
+            VALUE "OriginalFilename", "nomixe.exe" "\0"
+            VALUE "ProductName", "nomixe" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

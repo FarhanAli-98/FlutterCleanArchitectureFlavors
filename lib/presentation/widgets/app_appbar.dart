@@ -1,5 +1,5 @@
-import 'package:cboj_sulfehorateb/config/app_theme.dart';
-import 'package:cboj_sulfehorateb/config/app_theme.dart';
+import 'package:nomixe/config/app_theme.dart';
+import 'package:nomixe/config/app_theme.dart';
 import 'package:flutter/material.dart';
 
 class AppAppbar extends StatelessWidget implements PreferredSizeWidget {
@@ -52,11 +52,7 @@ class AppAppbar extends StatelessWidget implements PreferredSizeWidget {
       toolbarHeight: toolbarHeight,
       flexibleSpace: flexibleSpace,
       title: title != null && isTitleText
-          ? Text("$title",
-              style: Theme.of(context)
-                  .textTheme
-                  .displaySmall
-                  ?.copyWith(fontWeight: FontWeight.bold))
+          ? Text("$title", style: Theme.of(context).textTheme.displaySmall?.copyWith(fontWeight: FontWeight.bold))
           : titleWidget,
       actions: actions,
     );

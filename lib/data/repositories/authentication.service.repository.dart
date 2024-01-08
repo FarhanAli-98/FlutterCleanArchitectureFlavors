@@ -1,7 +1,6 @@
-import 'package:cboj_sulfehorateb/domain/repositories/authentication.repository.dart';
+import 'package:nomixe/domain/repositories/authentication.repository.dart';
 
 class AuthenticationServiceRepository implements AuthenticationRepository {
-
   @override
   Future<void> loginWithEmailAndPassword({required String email, required String password}) {
     // TODO: implement loginWithEmailAndPassword
@@ -19,5 +18,4 @@ class AuthenticationServiceRepository implements AuthenticationRepository {
     // TODO: implement registerWithEmailAndPassword
     throw UnimplementedError();
   }
-
 }

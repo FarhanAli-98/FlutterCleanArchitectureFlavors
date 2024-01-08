@@ -1,6 +1,6 @@
-import 'package:cboj_sulfehorateb/config/app_theme.dart';
-import 'package:cboj_sulfehorateb/utils/dimensions.dart';
-import 'package:cboj_sulfehorateb/utils/extensions/context.extension.dart';
+import 'package:nomixe/config/app_theme.dart';
+import 'package:nomixe/utils/dimensions.dart';
+import 'package:nomixe/utils/extensions/context.extension.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:path/path.dart';
@@ -36,9 +36,7 @@ class AppArrowButton extends StatelessWidget {
       child: ElevatedButton(
         onPressed: onPressed,
         style: ElevatedButton.styleFrom(
-          backgroundColor: arrowIconType == 'Light'
-              ? AppTheme.arrowButtonBg
-              : AppTheme.darkPrimaryColor,
+          backgroundColor: arrowIconType == 'Light' ? AppTheme.arrowButtonBg : AppTheme.darkPrimaryColor,
           shadowColor: AppTheme.transparent,
           foregroundColor: AppTheme.transparent,
           shape: RoundedRectangleBorder(
@@ -47,9 +45,7 @@ class AppArrowButton extends StatelessWidget {
         ),
         child: Icon(
           CupertinoIcons.arrow_right,
-          color: arrowIconType == 'Light'
-              ? AppTheme.darkPrimaryColor
-              : Colors.white,
+          color: arrowIconType == 'Light' ? AppTheme.darkPrimaryColor : Colors.white,
         ),
       ),
     );

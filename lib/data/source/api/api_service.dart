@@ -3,8 +3,8 @@ import 'dart:developer';
 import 'dart:io';
 import 'package:dio/dio.dart' as dio;
 import 'package:dio/dio.dart';
-import 'package:cboj_sulfehorateb/data/source/local/hive_database.dart';
-import 'package:cboj_sulfehorateb/utils/logger.dart';
+import 'package:nomixe/data/source/local/hive_database.dart';
+import 'package:nomixe/utils/logger.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -22,7 +22,8 @@ enum RequestMethod {
 class ApiService {
   static late dio.CancelToken cancelToken;
 
-  static Future<Map<dynamic, dynamic>?> request(String path, {required BuildContext context, required RequestMethod method, data, queryParameters}) async {
+  static Future<Map<dynamic, dynamic>?> request(String path,
+      {required BuildContext context, required RequestMethod method, data, queryParameters}) async {
     Log.i('method: ${describeEnum(method)}');
     Log.i('queryParameters: $queryParameters');
     Log.i('data: $data');
@@ -44,11 +45,7 @@ class ApiService {
                 validateStatus: (status) {
                   return status! < 500;
                 },
-                headers: {
-                  HttpHeaders.acceptHeader: "json/application/json",
-                  HttpHeaders.contentTypeHeader:
-                  "application/x-www-form-urlencoded"
-                }),
+                headers: {HttpHeaders.acceptHeader: "json/application/json", HttpHeaders.contentTypeHeader: "application/x-www-form-urlencoded"}),
           );
 
       // log(response.data.toString());

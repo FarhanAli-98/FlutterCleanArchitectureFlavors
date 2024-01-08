@@ -1,4 +1,4 @@
-import 'package:cboj_sulfehorateb/utils/dimensions.dart';
+import 'package:nomixe/utils/dimensions.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -264,8 +264,7 @@ class AppTheme {
       focusColor: primaryColor,
       iconTheme: const IconThemeData(color: Colors.black),
       fontFamily: 'Aeonik',
-      bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-          backgroundColor: bottomNavBarBackground, elevation: 3),
+      bottomNavigationBarTheme: const BottomNavigationBarThemeData(backgroundColor: bottomNavBarBackground, elevation: 3),
       inputDecorationTheme: const InputDecorationTheme(
         hintStyle: TextStyle(
           color: hintColor,
@@ -280,12 +279,10 @@ class AppTheme {
         style: ElevatedButton.styleFrom(
           foregroundColor: primaryColor,
           backgroundColor: primaryColor,
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
         ),
       ),
-      textSelectionTheme:
-          const TextSelectionThemeData(cursorColor: primaryColor),
+      textSelectionTheme: const TextSelectionThemeData(cursorColor: primaryColor),
       colorScheme: ColorScheme.fromSwatch()
           .copyWith(
             secondary: const Color(0xFF79A6DC),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:cboj_sulfehorateb/flavors.dart';
+import 'package:nomixe/flavors.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({Key? key}) : super(key: key);

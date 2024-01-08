@@ -1,6 +1,6 @@
-import 'package:cboj_sulfehorateb/config/app_theme.dart';
-import 'package:cboj_sulfehorateb/utils/dimensions.dart';
-import 'package:cboj_sulfehorateb/utils/extensions/context.extension.dart';
+import 'package:nomixe/config/app_theme.dart';
+import 'package:nomixe/utils/dimensions.dart';
+import 'package:nomixe/utils/extensions/context.extension.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:path/path.dart';
@@ -51,8 +51,7 @@ class AppElevatedButton extends StatelessWidget {
           ),
           child: Text(
             text,
-            style: context.bodyLarge
-                .copyWith(fontWeight: FontWeight.bold, color: textColor),
+            style: context.bodyLarge.copyWith(fontWeight: FontWeight.bold, color: textColor),
           )),
     );
   }

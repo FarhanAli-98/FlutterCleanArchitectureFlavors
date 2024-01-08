@@ -1,6 +1,6 @@
 import 'dart:core';
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:cboj_sulfehorateb/utils/dimensions.dart';
+import 'package:nomixe/utils/dimensions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
@@ -33,8 +33,7 @@ class BaseHelper {
   }
 
   // CACHE NETWORK WIDGET HERE
-  static Widget loadNetworkImage(String url, BoxFit fit,
-      {double? height, double? width}) {
+  static Widget loadNetworkImage(String url, BoxFit fit, {double? height, double? width}) {
     return CachedNetworkImage(
       imageUrl: url,
       fadeInCurve: Curves.easeIn,
@@ -58,8 +57,7 @@ class BaseHelper {
     );
   }
 
-  static Widget loadProfilePictureOnPost(String url,
-      {double? height = 36.0, double? width = 36.0}) {
+  static Widget loadProfilePictureOnPost(String url, {double? height = 36.0, double? width = 36.0}) {
     return CachedNetworkImage(
       imageUrl: url ?? '',
       fadeInDuration: const Duration(milliseconds: 500),

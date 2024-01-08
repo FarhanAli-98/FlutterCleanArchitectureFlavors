@@ -1,5 +1,5 @@
-import 'package:cboj_sulfehorateb/flavors.dart';
-import 'package:cboj_sulfehorateb/utils/logger.dart';
+import 'package:nomixe/flavors.dart';
+import 'package:nomixe/utils/logger.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'app/app_builder.dart';

@@ -1,7 +1,7 @@
-import 'package:cboj_sulfehorateb/config/app_theme.dart';
-import 'package:cboj_sulfehorateb/presentation/view_models/authentication_VM.dart';
-import 'package:cboj_sulfehorateb/utils/dimensions.dart';
-import 'package:cboj_sulfehorateb/utils/extensions/context.extension.dart';
+import 'package:nomixe/config/app_theme.dart';
+import 'package:nomixe/presentation/view_models/authentication_VM.dart';
+import 'package:nomixe/utils/dimensions.dart';
+import 'package:nomixe/utils/extensions/context.extension.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
@@ -60,9 +60,7 @@ class AppSimpleTextField extends StatelessWidget {
     var authScreenVM = context.watch<AuthenticationScreenVM>();
     // var forgotPassVM = context.watch<ForgotPassScreenVM>();
     bool isEmailValid(String value) {
-      bool emailValid = RegExp(
-              r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
-          .hasMatch(value);
+      bool emailValid = RegExp(r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+").hasMatch(value);
       return emailValid;
     }
 
@@ -89,8 +87,7 @@ class AppSimpleTextField extends StatelessWidget {
                   if (value.length < 8) {
                     return ('Password should at least 8 characters!');
                   } else if (isRePass) {
-                    if (authScreenVM.passwordController.text !=
-                        authScreenVM.rePasswordController.text) {
+                    if (authScreenVM.passwordController.text != authScreenVM.rePasswordController.text) {
                       return ('Passwords should be same!');
                     }
                   }
@@ -115,14 +112,11 @@ class AppSimpleTextField extends StatelessWidget {
                 ? authScreenVM.isRePassVisible
                 : false,
         decoration: InputDecoration(
-          contentPadding: const EdgeInsets.symmetric(
-              vertical: Dimensions.screenVerticalSpaces,
-              horizontal: Dimensions.screenHorizontalSpaces),
+          contentPadding: const EdgeInsets.symmetric(vertical: Dimensions.screenVerticalSpaces, horizontal: Dimensions.screenHorizontalSpaces),
           fillColor: AppTheme.textFieldFillColor,
           filled: true,
           border: const UnderlineInputBorder(
-            borderSide:
-                BorderSide(color: AppTheme.fieldOutlineColor, width: 1.5),
+            borderSide: BorderSide(color: AppTheme.fieldOutlineColor, width: 1.5),
           ),
           focusedBorder: const UnderlineInputBorder(
             borderRadius: BorderRadius.all(
@@ -131,8 +125,7 @@ class AppSimpleTextField extends StatelessWidget {
             borderSide: BorderSide(color: AppTheme.primaryColor, width: 1.5),
           ),
           enabledBorder: const UnderlineInputBorder(
-            borderSide:
-                BorderSide(color: AppTheme.fieldOutlineColor, width: 1.5),
+            borderSide: BorderSide(color: AppTheme.fieldOutlineColor, width: 1.5),
           ),
           // hintText: hintText,
           // hintStyle: Theme.of(context).inputDecorationTheme.hintStyle,
@@ -142,8 +135,7 @@ class AppSimpleTextField extends StatelessWidget {
           labelStyle: context.bodyMedium?.copyWith(
             color: AppTheme.labelHintColor,
           ),
-          floatingLabelStyle: context.bodyLarge
-              .copyWith(color: AppTheme.blackColor, fontSize: 15),
+          floatingLabelStyle: context.bodyLarge.copyWith(color: AppTheme.blackColor, fontSize: 15),
           // prefixIcon: prefixIcon != null
           //     ? Icon(
           //         prefixIcon,
@@ -153,8 +145,7 @@ class AppSimpleTextField extends StatelessWidget {
           //     : const SizedBox.shrink(),
           suffixIcon: isPass
               ? Padding(
-                  padding: const EdgeInsets.symmetric(
-                      horizontal: Dimensions.screenHorizontalSpaces),
+                  padding: const EdgeInsets.symmetric(horizontal: Dimensions.screenHorizontalSpaces),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -164,8 +155,7 @@ class AppSimpleTextField extends StatelessWidget {
                         },
                         child: Text(
                           authScreenVM.isPassVisible ? "Show" : "Hide",
-                          style: context.bodyLarge
-                              .copyWith(color: AppTheme.primaryColor),
+                          style: context.bodyLarge.copyWith(color: AppTheme.primaryColor),
                         ),
                       ),
                     ],

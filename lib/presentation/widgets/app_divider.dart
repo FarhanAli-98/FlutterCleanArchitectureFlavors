@@ -1,4 +1,4 @@
-import 'package:cboj_sulfehorateb/config/app_theme.dart';
+import 'package:nomixe/config/app_theme.dart';
 import 'package:flutter/material.dart';
 
 class AppDivider extends StatelessWidget {

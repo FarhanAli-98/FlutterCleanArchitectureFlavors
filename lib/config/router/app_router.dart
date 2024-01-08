@@ -1,5 +1,5 @@
-import 'package:cboj_sulfehorateb/config/router/custom_navigator_observer.dart';
-import 'package:cboj_sulfehorateb/presentation/ui/splash/splash_screen.dart';
+import 'package:nomixe/config/router/custom_navigator_observer.dart';
+import 'package:nomixe/presentation/ui/splash/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:go_router/go_router.dart';
@@ -65,8 +65,7 @@ class AppRouter {
     return CustomTransitionPage(
       key: state.pageKey,
       child: child,
-      transitionsBuilder: (context, animation, secondaryAnimation, child) =>
-          FadeTransition(opacity: animation, child: child),
+      transitionsBuilder: (context, animation, secondaryAnimation, child) => FadeTransition(opacity: animation, child: child),
     );
   }
 

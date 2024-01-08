@@ -1,10 +1,9 @@
 import 'dart:convert';
 import 'dart:developer';
-import 'package:cboj_sulfehorateb/utils/logger.dart';
+import 'package:nomixe/utils/logger.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
-class HiveDatabase{
-
+class HiveDatabase {
   static String loginCheck = 'loginCheck';
   static String authToken = 'authToken';
   static String userId = 'userId';
@@ -31,9 +30,7 @@ class HiveDatabase{
     _instance._box!.put(key, value);
   }
 
-  static dynamic getValue(String key){
+  static dynamic getValue(String key) {
     return _instance._box?.get(key);
   }
-
-
 }

@@ -1,4 +1,4 @@
-import 'package:cboj_sulfehorateb/utils/logger.dart';
+import 'package:nomixe/utils/logger.dart';
 import 'package:flutter/material.dart';
 
 class CustomNavigatorObserver extends NavigatorObserver {

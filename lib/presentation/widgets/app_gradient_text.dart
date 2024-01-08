@@ -1,12 +1,11 @@
-import 'package:cboj_sulfehorateb/config/app_theme.dart';
+import 'package:nomixe/config/app_theme.dart';
 import 'package:flutter/material.dart';
 
 class AppGradientText extends StatelessWidget {
   final Text text;
   final Gradient gradient;
 
-  const AppGradientText({Key? key, required this.text, required this.gradient})
-      : super(key: key);
+  const AppGradientText({Key? key, required this.text, required this.gradient}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
